@@ -12,7 +12,7 @@ $htag-color: #000;
 /* title */
 $title-color: #000;/*#007bff;*/
 /* main */
-$main-font-size: 7pt;
+$main-font-size: 10pt;
 $main-h2-color: #555;/* #007bff;*/
 $details-color: #000;
 /* sidebar */
@@ -34,7 +34,7 @@ $avatar-size: 100px;
 
 :root {
     --page-width: 8.5in;
-    --page-height: 12.5in;
+    --page-height: 15.7in;
     --main-width: 6.2in;
     --sidebar-width: calc(var(--page-width) - var(--main-width));
     --decorator-horizontal-margin: 0.2in;
@@ -53,12 +53,13 @@ $avatar-size: 100px;
 body {
     width: var(--page-width);
     height: var(--page-height);
-    margin: 0;
+    margin: auto;
     font-family: $font-family;
     font-weight: $font-weight;
     line-height: $line-height;
     color: $color;
     hyphens: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1,
@@ -71,6 +72,11 @@ h3 {
 li {
     list-style-type: none;
 }
+
+// .content {
+//     // max-width: 800px;
+//     margin: auto;
+// }
 
 #main {
     float: right;
